@@ -1905,11 +1905,11 @@ iframe {
 .section-split:before {
   position: absolute;
   content: "";
-  width: 50%;
+  width: 100%;
   height: 100%;
   right: 0;
   top: 0;
-  background: #f5f7fc;
+  background: #243d7c;
 }
 
 .section-split2 {
@@ -1921,12 +1921,12 @@ iframe {
   content: "";
   width: 1px;
   height: 100%;
-  right: 50%;
+  right: 100%;
   top: 0;
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
           transform: translateX(50%);
-  background: #e2e1ea;
+  background:white;
 }
 
 .bg-half-secondary, .bg-half-gray {
@@ -1988,6 +1988,10 @@ iframe {
   background: -webkit-linear-gradient(top, #fff, #fbfaff);
   background: -o-linear-gradient(top, #fff, #fbfaff);
   background: linear-gradient(to bottom, #fff, #fbfaff);
+}
+
+.divider {
+background-color: red;
 }
 
 .hr-divider {
