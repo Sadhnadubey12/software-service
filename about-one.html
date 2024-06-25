@@ -18,6 +18,54 @@
     <link rel="stylesheet" href="style.css">
     <!-- endinject -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+    <style>
+        /* Container for WhatsApp icon */
+       .whatsapp-container {
+         position: fixed;
+         bottom: 50px;
+         right: 50px;
+         width: 50px;
+         height: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         background-color: #25D366; /* WhatsApp green */
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+         transition: transform 0.3s ease-in-out;
+       }
+       
+       .whatsapp-container:hover {
+         transform: scale(1.1); /* Zoom effect on hover */
+       }
+       
+       .whatsapp-container .container-boton {
+         position: relative;
+         animation: blink 1s infinite;
+       }
+       
+       .whatsapp-container .container-boton:hover {
+         animation-play-state: paused;
+       }
+       
+       .whatsapp-container .boton {
+         font-size: 5em; /* Adjusted size for better appearance */
+         color: white;
+       }
+       
+       @keyframes blink {
+         0%, 49.9% {
+           opacity: 0;
+         }
+         50%, 100% {
+           opacity: 1;
+         }
+       }
+       
+       
+       
+           </style>
 </head>
 
 <body>
@@ -728,6 +776,14 @@
 
     <div class="go_top">
         <span class="la la-angle-up"></span>
+    </div>
+
+    <div class="whatsapp-container">
+        <div class="container-boton">
+            <a href="https://api.whatsapp.com/send?phone=91987654321&text=Hi! I am interested in your software services, please share the pricing." target="_blank">
+                <i class="fab fa-whatsapp boton"></i> <!-- Font Awesome WhatsApp icon -->
+            </a>
+        </div>
     </div>
 
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDduF2tLXicDEPDMAtC6-NLOekX0A5vlnY"></script>
